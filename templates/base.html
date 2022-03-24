@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel ="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <body bgcolor="#FFEAEA"></body>
+    
+</head>
+<body>
+    <header>
+      
+        <nav>
+          <!-- Menu de la izquierda  -->
+          <div class="left-side-menu">
+            <div class="men">
+            </div>
+  
+            <div class="sub-menu">
+              <a href="#">
+                <li>Acerca</li>
+              </a>
+              <a href="#section-two">
+                <li>Estados Unidos</li>
+              </a>
+              <a href="#section-third">
+                <li>Estadisticas</li>
+              </a>
+              <a href="#section-five">
+                <li>Contactame</li>
+              </a>
+            </div>
+        </nav>
+      </header>
+    {% block contents %}{% endblock %}
+</body>
+</html>

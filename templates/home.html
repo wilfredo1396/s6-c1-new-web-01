@@ -1,0 +1,197 @@
+
+{% extends './base.html' %}
+<link rel ="stylesheet" href="{{url_for('static',filename='style.css')}}">
+{% block contents %}
+    <div class="carousel">
+        <div class="carousel-inner">
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+            <div class="carousel-item">
+                <img src="../static/img/yellow.jpg">
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <img src="../static/img/liberty.jpg">
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+                <img src="../static/img/central.jpg">
+            </div>
+            <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+            <label for="carousel-2" class="carousel-control next control-1">›</label>
+            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+            <label for="carousel-3" class="carousel-control next control-2">›</label>
+            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+            <label for="carousel-1" class="carousel-control next control-3">›</label>
+            <ol class="carousel-indicators">
+                <li>
+                    <label for="carousel-1" class="carousel-bullet">•</label>
+                </li>
+                <li>
+                    <label for="carousel-2" class="carousel-bullet">•</label>
+                </li>
+                <li>
+                    <label for="carousel-3" class="carousel-bullet">•</label>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=will" />
+    <meta name="puerto" content="width=device-width, escala-inicial=1.0" />
+    <link
+      rel="stylesheet" type="text/css" href="css/styles.css"
+    />
+    <title>El portafolio de Wilfredo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <body bgcolor="D7FFD4"></body>
+  </head>
+  <body>
+ 
+    <!-- ----------------------------- seccion de inicio, ----------------------------------- -->
+    <section class="main-will-section">
+      <!-- left side code   -->
+      <div class="will-left-side">
+        <h1>Hola! Soy Wilfredo!</h1>
+        <p>
+            Un poco mas sobre mi, naci el 23 de abril de 2001 en San Salvador, empece mis estudios en el Colegio Garcia Flamenco,
+            gane el segundo lugar al mejor alumno del año en octavo grado, y luego volvi a ganar en noveno grado, pero esta vex un primer lugar,
+            logre graduarme del colegio, y aplique a la ESEN, logre ser admitido, y actualmente estoy en mi tercer año de 
+            Ingeniería de Negocios, Entre las cosas que amo están leer porque aprendo algo nuevo cada vez que lo hago y es algo que amo también 
+            ya que adquiero conocimientos que puedo aplicar a mi vida y así ser una persona super preparada, porque algo que siempre he creído 
+            es que el conocimiento es poder. Luego otra cosa que amo es hacer ejercicio ya que me gusta estar saludable y en forma, pero principalmente 
+            lo hago porque adquiero fortaleza mental y adquiero energía para mi día a día y cumplir con mis objetivos y obligaciones.
+         </p>
+       </div>
+   </section>
+    <!-- ----------------------------- 2da seccion de inicio  ------------------------------ -->
+
+    <section class="common-section" id="section-two">
+      <!-- left side of section 2  -->
+      <div class="left-side">
+      </div>
+
+      <!-- right side of section 2  -->
+      <div class="left-side">
+        <p>
+            
+        </p>
+        <p>
+
+        </p>
+      </div>
+    </section>
+
+    <!-- ----------------------------- 3ra seccion de inicio ---------------------------------- -->
+    <section class="section-third" id="section-third">
+      <h2>Estadisticas de Estados Unidos</h2>
+      <p>
+        Aqui algunas de las estadisticas mas interesantes de Estados Unidos:
+      </p>
+      <div class="section-third-task">
+        <div class="task-1">
+          <h3>
+            Estados Unidos, situada en América del Norte, tiene una superficie de 9.831.510 Km2, 
+            así pues, es uno de los países más grandes del mundo.
+          </h3>
+        </div>
+
+        <div class="task-2">
+          <h3>Estados Unidos es la primera economia del mundo por volumen de PIB. </h3>
+        </div>
+
+        <div class="task-3">
+          <h3>Uno de los datos interesantes de Estados Unidos es que ¡Central Park es más grande que El Vaticano! Ah, y más que el principado de Mónaco también</h3>
+        </div>
+      </div>
+    </section>
+    <!-- ----------------------------- 4ta seccion de inicio ------------------------------------ -->
+
+    <section class="common-section" id="section-four">
+      <!-- right side of section 2  -->
+      <div class="right-side">
+        <h2>Recomendaciones</h2>
+        <p>
+            <p>Dueño Ferretería El Chelito: es una persona bastante atenta, puntual y laboriosa, se recomienda 
+            para trabajos de organización de empresa.</P> 
+
+            <P>Profesor de Emprendimiento: Es una persona responsable y organizada, entrego todos los trabajos 
+                a tiempo.</P>
+
+            <P>Profesora de Matemática I: Es una persona bastante laboriosa y atenta, se recomienda para 
+                cualquier tipo de trabajo que requiera resolver problemas</P>
+        </p>
+      </div>
+    </section>
+
+    <!-- ----------------------------- 5ta seccion de inicio --------------------------------- -->
+
+    <section class="common-section" id="section-five">
+      <!-- left side of section 2  -->
+      <div class="left-side">
+      </div>
+
+      <!-- right side of section 2  -->
+      <div class="right-side">
+        <h2>Algunos trabajos que he hecho a lo largo de 
+            mi carrera...</h2>
+
+        <div class="goals">
+            <h3>
+               Empresa de Impresion la Union
+            </h3>
+            <p>
+              Se llevo a cabo un rediseño del proceso de bioseguridad
+              para los empleados de dicha empresa.
+            </p>
+          </div>
+            <h3>
+               Empresa Import Llantas
+            </h3>
+            <p>
+              Se llevo a cabo un rediseño de servicio al cliente,
+              para que el proceso de atencion fuera mas optimo.
+              <div class="right-side">
+                <h2></h2>
+                <p>20200070@esen.edu.sv
+                </p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </head>    
+  <footer>
+    <div>
+      <p></p>
+    </div>
+
+    <div class="footer-menu">
+      <div class="footer-div-2">
+        <h4>Red social Instagram</h4>
+        <a href="https://www.instagram.com/wilfremejiaa/?utm_medium=copy_link"><li>Instagram</li></a>
+      </div>
+
+      <div class="footer-div-3">
+        <h4>Red social Facebook</h4>
+        <a href="https://www.facebook.com/wilfredoalexander.zelayamejia"><li>Facebook</li></a>
+      </div>
+
+      <div class="footer-div-4">
+        <h4>Rede social Twitter</h4>
+        <a href="https://mobile.twitter.com/wilfrezelaya"><li>Twitter</li></a>
+      </div>
+
+      <div class="footer-div-5">
+        <h4>GITHUB</h4>
+        <a href="https://github.com/wilfredo1396"><li>LINK</li></a>
+      </div>
+    </div>
+  </footer>
+  </div>
+</html>    
+{% endblock %}

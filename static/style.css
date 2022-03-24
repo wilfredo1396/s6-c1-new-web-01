@@ -1,0 +1,385 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 55%;
+    scroll-behavior: smooth;
+  }
+  .imagen{
+    width: 100%;
+    height: 40%;
+    bottom: 40%;
+    margin-top: 10%;
+    padding-right: 20%
+    
+  }
+  
+  body {
+    --main-color: #3e583a;
+    --primry-color: #082531;
+  }
+  
+ 
+  
+  h4,
+  h3 {
+    font-family: "muli";
+    color: var(--main-color);
+  }
+  
+  h3 {
+    font-weight: 600rem;
+    font-size: 2.2rem;
+    line-height: 6rem;
+    text-transform: capitalize;
+  }
+  
+  p,
+  a,
+  li,
+  button {
+    font-family: "muli";
+    color: var(--primry-color);
+  }
+  
+  p {
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  li {
+    list-style:none;
+  }
+  
+  button {
+    padding: 10rem 3rem;
+    border-radius: 4rem;
+    border: none;
+    outline: none;
+    line-height: 3.6rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+  }
+  
+  /* --------------------------------------  estilo de menu 
+  --------------------------------------------------------------------------- */
+  header {
+    padding: 1rem 40rem;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+    
+  }
+  
+  header nav .left-side-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    background-color: 55px solid red;
+   
+  }
+  
+  header nav .left-side-menu .sub-menu {
+      width: 150rem;
+      height: 150rem;
+      background: #4a76f0;
+      border-radius: 0px;
+      margin-left: -38rem;
+      margin-top: 1rem;
+    height: inherit;
+    display: flex;
+    position: fixed;
+    z-index: 60;
+  }
+  
+  header nav .left-side-menu .sub-menu a {
+    margin-right: 15rem;
+  }
+  
+  header nav .left-side-menu .sub-menu a li {
+    font-size: 3rem;
+    line-height: 5rem;
+    text-transform: capitalize;
+  }
+
+  header .right-side-menu {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+  }
+  
+  
+  /* -------------------------------------- estilo css
+  --------------------------------------------------------------------------- */
+  .main-will-section {
+    padding: 0 20rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+  
+  .main-will-section .will-left-side {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .main-will-section h1 {
+    width: 55rem;
+    font-size: 7.5rem;
+    line-height: 9rem;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+  }
+  
+  .main-hero-section p {
+    margin-bottom: 8rem;
+    width: 45rem;
+  }
+   
+  /* ------------------- estilo de la segunda seccion
+  ------------------------------------ */
+  
+  .common-section {
+    width: ;
+    height: 38rem;
+    display: ;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10rem;
+    padding:10rem 20rem;
+  }
+
+  .common-section .right-side h2 {
+    width: 70rem;
+    font-style: normal;
+    font-size: 5.5rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
+  
+  .common-section .right-side p {
+    width: 30.3rem;
+    margin-bottom: 3rem;
+  }
+  
+  /* ------------------- estilo de tercera seccion
+  ------------------------------------ */
+  
+  .section-third {
+    width: 70;
+    height: 40rem;
+    background: var(--background-color-blue);
+    padding: 3rem 20rem;
+  }
+  
+  .section-third h2 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .section-third p {
+    width: 50rem;
+    height: 9rem;
+    margin-bottom: 3rem;
+    margin-top: 10rem;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .section-third .section-third-task {
+    display: grid;
+    grid-template-columns: 10fr 10fr 10fr;
+    grid-column-gap: 2rem;
+    text-transform: lowercase;
+  }
+
+   /* ------------------- our 6th section Footer css style 
+------------------------------------ */
+
+footer {
+    width: 100%;
+    background: var(--background-color);
+    height: auto;
+    padding: 10rem 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  footer img {
+    width: 13rem;
+    height: 5.5rem;
+  }
+  
+  footer .footer-menu {
+    margin-top: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  footer div h4 {
+    font-size: 2rem;
+    text-transform: capitalize;
+    padding left: 5cm
+  }
+  
+  footer div a {
+    font-size: 1.7rem;
+    line-height: 120%;
+    padding-left: 7cm;
+  }
+  
+  footer .footer-div-5 a {
+    font-size: 1.5rem;
+    padding-left:7cm
+  }
+
+  html, body {
+    margin: 0px;
+    padding: 0px;
+    background: url("http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg");
+}
+
+.carousel {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: rgb(5, 23, 99);
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #a13333;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: rgb(231, 17, 17);
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #e42828;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #06579e;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgb(5, 4, 65);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
