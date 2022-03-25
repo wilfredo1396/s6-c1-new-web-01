@@ -1,6 +1,5 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-import sqlalchemy
 from routes.site import site
 from routes.dashboard import dashboard
 
