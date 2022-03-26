@@ -3,7 +3,8 @@ from models.user import messages
 from Forms.registerform import userform
 from database.db import db
 
-site = Blueprint("site", __name__)
+
+site = Blueprint("site", __name__, url_prefix="/")
 
 
 @site.route("/", methods=["GET", "POST"])
