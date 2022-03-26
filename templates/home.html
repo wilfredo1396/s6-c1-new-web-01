@@ -139,27 +139,34 @@
       <div class="right-side">
         <h2>Contactanos</h2>
 
-        <div class="goals">
-          <div id="after_submit"></div>
-          <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-            <div class="row">
-              <label class="required" for="name">Your name:</label><br />
-              <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-              <span id="name_validation" class="error_message"></span>
-            </div>
-            <div class="row">
-              <label class="required" for="email">Your email:</label><br />
-              <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-              <span id="email_validation" class="error_message"></span>
-            </div>
-            <div class="row">
-              <label class="required" for="message">Your message:</label><br />
-              <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
-              <span id="message_validation" class="error_message"></span>
-            </div>
-              
-              <input id="submit_button" type="submit" value="Send email" />
-          </form>
+        <div class="seccion-contacto">
+          <div class="contacto-h">
+           <h2>Contáctame</h2>
+           <h3>y dame tu feeback</h3> 
+           <div class="divider"></div> 
+          </div>
+          <div class="container-contact" >
+              <img src="./static/personal.jpeg" alt="logo personal">
+              <img src="./static/log.jpg" alt="logo personal">  
+              <div class="contacto-form">
+                  <h4>Enviame un mensaje...</h4>
+                  <form class="form" action="{{ url_for('site.mensajenuevo') }}" method="post">
+                      {{ form.hidden_tag() }}
+                      {{ form.firstname.label}}
+                      {{ form.firstname}}
+                      {{ form.lastname.label}}
+                      {{ form.lastname}}
+                      {{ form.email.label}}
+                      {{ form.email}}
+                      {{ form.message.label}}
+                      {{ form.message}}
+                      <br>
+                      {{ form.submit }}
+                  </form>
+              </div>
+          </div>
+  
+      </div>
                 <p>20200070@esen.edu.sv
                 </p>
             </p>
@@ -169,10 +176,6 @@
     </section>
   </head>    
   <footer>
-    <div>
-      <p></p>
-    </div>
-
     <div class="footer-menu">
       <div class="footer-div-2">
         <h4>Red social Instagram</h4>

@@ -1,6 +1,8 @@
 from app import app
+from database.db import db
 
-if __name__ == "__main__":
-    "Corriendo app flask"
-    "A este archivo debemos darle play"
+with app.app_context():
+    db.create_all()
+
+if __name__ == "_main_":
     app.run(debug=True)
